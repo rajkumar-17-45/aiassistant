@@ -94,14 +94,7 @@ Here’s a **README.md** file for your project. This document provides an overvi
 
 ---
 
-## Screenshots
-![Resume Upload](https://raw.githubusercontent.com/deepakkumar11022005/AI-Assistance-for-Job-Application/main/AI%20Assist%20page1.png)
 
-![Job Matching](https://raw.githubusercontent.com/deepakkumar11022005/AI-Assistance-for-Job-Application/main/AI%20Assist%20page2.png)
-
-![Cover Letter Generation](https://raw.githubusercontent.com/deepakkumar11022005/AI-Assistance-for-Job-Application/main/AI%20Assist%20page2.png)
-
-![Auto-Fill](https://raw.githubusercontent.com/deepakkumar11022005/AI-Assistance-for-Job-Application/main/AI%20Assist%20page3.png)
 
 
 ---
@@ -150,8 +143,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For questions or feedback, please contact:
 
 - **Deepakkumar S**  
-  Email: deepakkumars11022005@gmail.com  
-  GitHub: [Deepakkumar1102](https://github.com/Deepakkumar1102)
+  Email: rajkumarperiyasamy005@gmail.com  
+  GitHub: [rajkumar-17-45](https://github.com/rajkumar-17-45)
 
 ---
 
