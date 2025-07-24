@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Job Assistant</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+   <div class="popup-container">
+      <!-- Header -->
+      <div class="header">
+         <h2>AI Assistant</h2>
+         <button class="options-btn">⚙️</button>
+      </div>
+
+      <!-- Tab Navigation -->
+      <!-- <div class="tabs">
+         <button class="tab-btn active">Overview</button>
+         <button class="tab-btn">Match</button>
+         <button class="tab-btn">Apply</button>
+      </div> -->
+
+      <!-- Resume Upload Section -->
+      <div class="resume-upload-section">
+         <h3>📄 <span>Resume Upload</span></h3>
+         <div class="upload-container">
+            <input type="file" id="resumeUpload" accept=".pdf" class="file-input">
+            <label for="resumeUpload" id="resumeLabel" class="upload-button">
+               <span class="upload-icon">📤</span>
+               <span class="upload-text">Upload Resume (PDF)</span>
+            </label>
+         </div>
+         <div class="resume-status-container">
+            <div id="resumeStatus" class="status-message">No resume uploaded</div>
+            <div id="resumeFileName" class="file-name"></div>
+         </div>
+         <div class="processing-indicator" id="processingIndicator">
+            <div class="spinner"></div>
+            <span>Processing resume...</span>
+         </div>
+      </div>
+
+      <!-- Job Details -->
+      <div class="section">
+         <div class="job-details-header">
+            <h3>💼 <span>Job Details</span></h3>
+            <button class="refresh-btn" id="refreshJobDetails" title="Refresh job details">🔄</button>
+         </div>
+         <div id="jobDetailContent">
+            <div id="jobTitle">Waiting for job details...</div>
+            <div id="companyName">Please refresh or navigate to a job page</div>
+            <div class="job-desc-container">
+               <div id="jobDesc" class="job-description-text">Click the refresh button to extract job details from the
+                  current page.</div>
+               <button class="expand-btn" id="expandJobDesc">More</button>
+            </div>
+            <div id="jobError" class="error-message" style="display: none;">
+               <p>Could not extract job details. Please make sure you're on a job posting page.</p>
+               <button class="retry-btn" id="retryJobFetch">Try Again</button>
+            </div>
+            <div id="jobLoading" class="loading-indicator" style="display: none;">
+               <div class="spinner"></div>
+               <p>Analyzing page content...</p>
+            </div>
+         </div>
+      </div>
+
+      <!-- Job Match -->
+      <div class="section">
+         <h3>📊 <span>Job Match</span></h3>
+         <div class="match-header">
+            <div class="match-details">
+               <div id="matchBadge" class="match-badge">Refresh job Details...</div>
+            </div>
+         </div>
+         <div class="skills-container">
+            <div class="skills-column">
+               <h4>Matched Skills (<span id="matchedCount">0</span>)</h4>
+               <ul id="matchedSkills" class="skills-list matched"></ul>
+            </div>
+            <div class="skills-column">
+               <h4>Missing Skills (<span id="missingCount">0</span>)</h4>
+               <ul id="missingSkills" class="skills-list missing"></ul>
+            </div>
+         </div>
+      </div>
+
+      <div class="section">
+         <h3>🔍 <span>ATS Optimization</span></h3>
+         <div class="optimize-container">
+            <button id="optimizeResume">Optimize Resume</button>
+            <div id="resumeSuggestions">
+               <!-- Loading State -->
+               <div id="loadingState">
+                  <p>Loading suggestions...</p>
+                  <div class="spinners"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Cover Letter -->
+      <div class="section">
+         <div class="cover-letter-header">
+            <h3>✍ <span>Cover Letter</span></h3>
+            <div>
+               <button class="action-btn" data-tooltip="Copy to clipboard">📋</button>
+               <button class="action-btn" data-tooltip="Save as file">💾</button>
+            </div>
+         </div>
+         <button id="generateCoverLetter">Generate Cover Letter</button>
+         <textarea id="coverLetter" placeholder="Your generated cover letter will appear here..."></textarea>
+      </div>
+
+      <!-- Auto-Fill -->
+      <div class="section">
+         <h3>🔄 <span>Auto-Fill</span></h3>
+         <div class="auto-fill-container">
+            <button id="autoFill">Auto-Fill Job Application</button>
+         </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+         AI Assistant v2.0
+      </div>
+   </div>
+   <script src="scripts.js"></script>
+</body>
+
+</html>
