@@ -142,7 +142,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions or feedback, please contact:
 
-- **Deepakkumar S**  
+- **Rajkumar P**  
   Email: rajkumarperiyasamy005@gmail.com  
   GitHub: [rajkumar-17-45](https://github.com/rajkumar-17-45)
 
